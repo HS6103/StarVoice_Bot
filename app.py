@@ -27,13 +27,13 @@ def linebot():
         signature = request.headers['X-Line-Signature']      # 加入回傳的 headers
         handler.handle(body, signature)                      # 綁定訊息回傳的相關資訊
         tk = json_data['events'][0]['replyToken']            # 取得回傳訊息的 Token
-        type = json_data['events'][0]['message']['type']     # 取得 LINe 收到的訊息類型
+        type = json_data['events'][0]['message']['type']     # 取得 LINE 收到的訊息類型
         if type=='text':
             msg = json_data['events'][0]['message']['text']  # 取得 LINE 收到的文字訊息
             print(msg)                                       # 印出內容
             reply = msg
         else:
-            reply = '你傳的不是文字呦～'
+            reply = '你傳的不是文字呦～請再試一次'
         print(reply)
         line_bot_api.reply_message(tk,TextSendMessage(reply))# 回傳訊息
     except:
