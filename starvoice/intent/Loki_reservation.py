@@ -21,7 +21,7 @@ import json
 import os
 
 DEBUG = True
-CHATBOT_MODE = False
+CHATBOT_MODE = True
 
 userDefinedDICT = {}
 try:
@@ -32,7 +32,7 @@ except Exception as e:
 responseDICT = {}
 if CHATBOT_MODE:
     try:
-        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_reservation.json"), encoding="utf-8"))
+        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply\\reply_reservation.json"), encoding="utf-8"))
     except Exception as e:
         print("[ERROR] responseDICT => {}".format(str(e)))
 
