@@ -38,7 +38,7 @@ def linebot():
             msg = json_data['events'][0]['message']['text']  # 取得 LINE 收到的文字訊息
             print(msg)                                       # 印出內容
             resultDICT = execLoki(content=msg, splitLIST=splitLIST)
-            reply = resultDICT["response"]
+            reply = resultDICT["response"][0]
         else:
             reply = '你傳的不是文字呦～請再試一次'
         print(reply)
