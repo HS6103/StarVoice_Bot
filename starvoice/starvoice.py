@@ -64,7 +64,7 @@ for modulePath in glob("{}\\intent\\Loki_*.py".format(BASE_PATH)):
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
 try:
-    accountInfo = json.load(open(os.path.join(BASE_PATH, "account.info"), encoding="utf-8"))
+    accountInfo = json.load(open("../account.info", encoding="utf-8"))
     USERNAME = accountInfo["username"]
     LOKI_KEY = accountInfo["loki_key"]
 except Exception as e:
@@ -277,7 +277,7 @@ def testIntent():
 
 if __name__ == "__main__":
     # 測試所有意圖
-    testIntent()
+    #testIntent()
 
     # 測試其它句子
     filterLIST = []
@@ -286,6 +286,7 @@ if __name__ == "__main__":
     refDICT = { # value 必須為 list
         #"key": []
     }
-    resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
-    resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, splitLIST=splitLIST, refDICT=refDICT) # output => {"key": ["今天天氣", "後天氣象"]}
-    resultDICT = execLoki(["今天天氣如何？", "後天氣象如何？"], filterLIST=filterLIST, refDICT=refDICT)                # output => {"key": ["今天天氣", "後天氣象"]}
+    resultDICT = execLoki("預訂團室", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
+    print(resultDICT["response"][0])
+    #resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, splitLIST=splitLIST, refDICT=refDICT) # output => {"key": ["今天天氣", "後天氣象"]}
+    #resultDICT = execLoki(["今天天氣如何？", "後天氣象如何？"], filterLIST=filterLIST, refDICT=refDICT)                # output => {"key": ["今天天氣", "後天氣象"]}
