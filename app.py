@@ -1,5 +1,8 @@
+#!/user/bin/env python
+# -*- coding: utf-8 -*-
+
 from flask import Flask, request
-from starvoice import execLoki
+from .starvoice import execLoki
 
 # 載入 json 標準函式庫，處理回傳的資料格式
 import json
