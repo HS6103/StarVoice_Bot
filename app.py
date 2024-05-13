@@ -18,6 +18,8 @@ app = Flask(__name__)
 @app.route("/", methods=['POST'])
 
 def linebot():
+    splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
+    
     body = request.get_data(as_text=True)                    # 取得收到的訊息內容
     try:
         json_data = json.loads(body)                         # json 格式化訊息內容
@@ -32,8 +34,8 @@ def linebot():
         if type=='text':
             msg = json_data['events'][0]['message']['text']  # 取得 LINE 收到的文字訊息
             print(msg)                                       # 印出內容
-            resultDICT = execLoki(msg)
-            reply = resultDICT["response"][0]
+            resultDICT = execLoki(content=msg, splitLIST=splitLIST)
+            reply = resultDICT["response"]
         else:
             reply = '你傳的不是文字呦～請再試一次'
         print(reply)
