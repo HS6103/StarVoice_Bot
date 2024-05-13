@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, request
-from starvoice import execLoki
 
 # 載入 json 標準函式庫，處理回傳的資料格式
 import json
@@ -37,8 +36,7 @@ def linebot():
         if type=='text':
             msg = json_data['events'][0]['message']['text']  # 取得 LINE 收到的文字訊息
             print(msg)                                       # 印出內容
-            resultDICT = execLoki(content=msg, splitLIST=splitLIST)
-            reply = resultDICT["response"][0]
+            reply = msg
         else:
             reply = '你傳的不是文字呦～請再試一次'
         print(reply)
