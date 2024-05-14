@@ -2,4 +2,5 @@ account.info
 inputSTR.txt
 .DS_*
 __pycache__
+line_credit.json
 
