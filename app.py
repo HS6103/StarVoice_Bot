@@ -2,12 +2,10 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, request
-
 from sys import path
 import os
 
 path.append(os.getcwd() + "\\starvoice")
-
 from starvoice.starvoice import execLoki
 
 # 載入 json 標準函式庫，處理回傳的資料格式
@@ -55,7 +53,7 @@ def linebot():
             
     except:
         print(body)                                                                   # 如果發生錯誤，印出收到的內容
-        reply = '我是預設的回覆字串，目前機器人發生了一些問題，請再試一次'                 # 如果發生錯誤，預設的回覆訊息
+        reply = '我是預設的回覆字串，目前機器人發生了一些問題，請稍後再試一次!'                 # 如果發生錯誤，預設的回覆訊息
                 
     print(reply)
     line_bot_api.reply_message(tk,TextSendMessage(reply))    # 回傳訊息
