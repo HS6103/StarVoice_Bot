@@ -24,10 +24,14 @@ line_creditDICT = dict(line_credit.items())
 
 app = Flask(__name__)
 
-@app.route("/", methods=['POST'])
+@app.route("/", methods=['POST', 'GET'])
 
 def linebot():
+    filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
+    refDICT = { # value 必須為 list
+        #"key": []
+    }    
     
     body = request.get_data(as_text=True)                    # 取得收到的訊息內容
     try:
@@ -40,17 +44,22 @@ def linebot():
         handler.handle(body, signature)                      # 綁定訊息回傳的相關資訊
         tk = json_data['events'][0]['replyToken']            # 取得回傳訊息的 Token
         type = json_data['events'][0]['message']['type']     # 取得 LINE 收到的訊息類型
+        
         if type=='text':
             msg = json_data['events'][0]['message']['text']  # 取得 LINE 收到的文字訊息
             print(msg)                                       # 印出內容
-            resultDICT = execLoki(msg)
-            reply = resultDICT["response"][0]
+            resultDICT = execLoki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki判斷intent
+            reply = resultDICT["response"][0]   #回傳回覆字串
         else:
             reply = '你傳的不是文字呦～請再試一次'
-        print(reply)
-        line_bot_api.reply_message(tk,TextSendMessage(reply))# 回傳訊息
+            
     except:
-        print(body)                                          # 如果發生錯誤，印出收到的內容
+        print(body)                                                                   # 如果發生錯誤，印出收到的內容
+        reply = '我是預設的回覆字串，目前機器人發生了一些問題，請再試一次'                 # 如果發生錯誤，預設的回覆訊息
+                
+    print(reply)
+    line_bot_api.reply_message(tk,TextSendMessage(reply))    # 回傳訊息
+
     return 'OK'                                              # 驗證 Webhook 使用，不能省略
 
 if __name__ == "__main__":
