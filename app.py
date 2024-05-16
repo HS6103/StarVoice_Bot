@@ -47,9 +47,13 @@ def linebot():
             msg = json_data['events'][0]['message']['text']  # 取得 LINE 收到的文字訊息
             print(msg)                                       # 印出內容
             resultDICT = execLoki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki判斷intent
-            reply = resultDICT["response"][0]   #回傳回覆字串
+            if resultDICT != {}:
+                reply = resultDICT["response"][0]   #回傳回覆字串
+            else:
+                reply = "抱歉，我只是個機器人沒辦法回答喔"   #回傳沒有答案時的預設回覆字串
         else:
             reply = '你傳的不是文字呦～請再試一次'
+            
         print(reply)
         line_bot_api.reply_message(tk,TextSendMessage(reply))    # 回傳訊息
 
