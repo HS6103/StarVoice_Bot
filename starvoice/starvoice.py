@@ -64,9 +64,8 @@ for modulePath in glob("{}\\intent\\Loki_*.py".format(BASE_PATH)):
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
 try:
-    accountInfo = json.load(open(os.path.join(BASE_PATH, "account.info"), encoding="utf-8"))
-    USERNAME = accountInfo["username"]
-    LOKI_KEY = accountInfo["loki_key"]
+    USERNAME = os.environ.get("USERNAME")
+    LOKI_KEY = os.environ.get("LOKI_KEY")
 except Exception as e:
     print("[ERROR] AccountInfo => {}".format(str(e)))
     USERNAME = ""
