@@ -54,6 +54,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     if utterance == "預訂團室":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["intent"] = 'reservation'
         else:
             # write your code here
             # resultDICT[key].append(value)
