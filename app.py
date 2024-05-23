@@ -61,15 +61,7 @@ def linebot():
         print("[ERROR] => {}".format(str(e)))
         print(body)                                                                   # 如果發生錯誤，印出收到的內容
                                                                  
-    return 'OK'                                                                       # 驗證 Webhook 使用，不能省略
-
-def get_loki(USERNAME, LOKI_KEY, inputSTR, filterLIST, refDICT, splitLIST):    
-    from starvoice.starvoice import execLoki    
-    resultDICT = execLoki(inputSTR, filterLIST, refDICT, splitLIST)
-    
-    return resultDICT
-
-   
+    return 'OK'                                                                       # 驗證 Webhook 使用，不能省略   
 
 if __name__ == "__main__":
     app.run()
