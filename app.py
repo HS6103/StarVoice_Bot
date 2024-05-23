@@ -50,7 +50,7 @@ def linebot():
             if resultDICT != {}:
                 reply = resultDICT["response"][0]   #回傳回覆字串
             else:
-                reply = "抱歉，我只是個機器人沒辦法回答喔"   #回傳沒有答案時的預設回覆字串
+                reply = "抱歉，我只是個機器人，沒辦法回答喔"   #回傳/沒有答案時的預設回覆字串
         else:
             reply = '你傳的不是文字呦～請再試一次'
             

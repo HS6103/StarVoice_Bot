@@ -85,7 +85,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if args[5] == None or args[5] in ["鼓", "爵士鼓", "pa", "貝斯", "bass", "kb", "keyboard", "主唱", "vocal", "吉他", "結他"]:    
                 resultDICT["response"] = getResponse(utterance, args)
             else:
-                pass
+                resultDICT["response"] = "抱歉，我們沒有{}社課喔!".format(args[5])
         else:
             pass
 
