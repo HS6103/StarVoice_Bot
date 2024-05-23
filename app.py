@@ -18,9 +18,9 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
-with open("line_credit.json","r",encoding="utf-8") as e:
-    line_credit = json.load(e)
-line_creditDICT = dict(line_credit.items())
+#with open("line_credit.json","r",encoding="utf-8") as e:
+    #line_credit = json.load(e)
+#line_creditDICT = dict(line_credit.items())
 
 app = Flask(__name__)
 
