@@ -45,6 +45,7 @@ def linebot():
         }
         
         resultDICT = execLoki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷
+        print(resultDICT)
         
         if resultDICT != {}:
             reply = resultDICT["response"][0]            #回傳回覆字串
