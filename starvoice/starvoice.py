@@ -63,13 +63,13 @@ for modulePath in glob("{}\\intent\\Loki_*.py".format(BASE_PATH)):
     lokiIntentDICT[moduleNameSTR] = globals()[moduleNameSTR]
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
-try:
-    USERNAME = os.environ.get("USERNAME")
-    LOKI_KEY = os.environ.get("LOKI_KEY")
-except Exception as e:
-    print("[ERROR] AccountInfo => {}".format(str(e)))
-    USERNAME = ""
-    LOKI_KEY = ""
+#try:
+    #USERNAME = os.getenv("loki_username")
+    #LOKI_KEY = os.getenv("loki_key")
+#except Exception as e:
+    #print("[ERROR] AccountInfo => {}".format(str(e)))
+    #USERNAME = ""
+    #LOKI_KEY = ""
 
 # 意圖過濾器說明
 # INTENT_FILTER = []        => 比對全部的意圖 (預設)
@@ -96,9 +96,9 @@ class LokiResult():
 
         try:
             result = post(LOKI_URL, json={
-                "username": USERNAME,
+                "username": os.environ.get("loki_username"),
                 "input_list": inputLIST,
-                "loki_key": LOKI_KEY,
+                "loki_key": os.environ.get("loki_key"),
                 "filter_list": filterLIST
             })
 
