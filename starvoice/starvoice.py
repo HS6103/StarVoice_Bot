@@ -56,7 +56,7 @@ import re
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 
 lokiIntentDICT = {}
-for modulePath in glob("{}\\intent\\Loki_*.py".format(BASE_PATH)):
+for modulePath in glob("{}/intent/Loki_*.py".format(BASE_PATH)):
     moduleNameSTR = Path(modulePath).stem[5:]
     modulePathSTR = modulePath.replace(BASE_PATH, "").replace(".py", "").replace("/", ".").replace("\\", ".")[1:]
     globals()[moduleNameSTR] = import_module(modulePathSTR)
@@ -184,6 +184,7 @@ class LokiResult():
         return rst
 
 def runLoki(inputLIST, filterLIST=[], refDICT={}):
+    print("running loki")
     resultDICT = deepcopy(refDICT)
     lokiRst = LokiResult(inputLIST, filterLIST)
     if lokiRst.getStatus():
@@ -205,6 +206,7 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                     resultDICT[k].extend(lokiResultDICT[k])
                 else:
                     resultDICT[k].append(lokiResultDICT[k])
+            print("loki done")
     else:
         resultDICT["msg"] = lokiRst.getMessage()
     return resultDICT
