@@ -56,7 +56,7 @@ import re
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 
 lokiIntentDICT = {}
-for modulePath in glob("{}\\intent\\Loki_*.py".format(BASE_PATH)):
+for modulePath in glob("{}/intent/Loki_*.py".format(BASE_PATH)):
     moduleNameSTR = Path(modulePath).stem[5:]
     modulePathSTR = modulePath.replace(BASE_PATH, "").replace(".py", "").replace("/", ".").replace("\\", ".")[1:]
     globals()[moduleNameSTR] = import_module(modulePathSTR)
@@ -101,6 +101,8 @@ class LokiResult():
                 "loki_key": os.environ.get("loki_key"),
                 "filter_list": filterLIST
             })
+            print("result ok")
+            
 
             if result.status_code == codes.ok:
                 result = result.json()
@@ -182,6 +184,7 @@ class LokiResult():
         return rst
 
 def runLoki(inputLIST, filterLIST=[], refDICT={}):
+    print("running loki")
     resultDICT = deepcopy(refDICT)
     lokiRst = LokiResult(inputLIST, filterLIST)
     if lokiRst.getStatus():
@@ -203,6 +206,7 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                     resultDICT[k].extend(lokiResultDICT[k])
                 else:
                     resultDICT[k].append(lokiResultDICT[k])
+            print("loki done")
     else:
         resultDICT["msg"] = lokiRst.getMessage()
     return resultDICT
@@ -255,6 +259,7 @@ def execLoki(content, filterLIST=[], splitLIST=[], refDICT={}):
             resultDICT = runLoki(inputLIST[i*INPUT_LIMIT:(i+1)*INPUT_LIMIT], filterLIST=filterLIST, refDICT=resultDICT)
             if "msg" in resultDICT:
                 break
+        
 
     return resultDICT
 
