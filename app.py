@@ -30,7 +30,7 @@ def linebot():
     
     body = request.get_data(as_text=True)                    # 取得收到的訊息內容
 
-    json_data = json.loads(body)                         # json 格式化訊息內容
+    json_data = json.load(body)                         # json 格式化訊息內容
     access_token = os.environ.get("access_token")
     secret = os.environ.get("channel_secret")
     line_bot_api = LineBotApi(access_token)              # 確認 token 是否正確
