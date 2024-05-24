@@ -101,6 +101,8 @@ class LokiResult():
                 "loki_key": os.environ.get("loki_key"),
                 "filter_list": filterLIST
             })
+            print("result ok")
+            
 
             if result.status_code == codes.ok:
                 result = result.json()
@@ -255,6 +257,7 @@ def execLoki(content, filterLIST=[], splitLIST=[], refDICT={}):
             resultDICT = runLoki(inputLIST[i*INPUT_LIMIT:(i+1)*INPUT_LIMIT], filterLIST=filterLIST, refDICT=resultDICT)
             if "msg" in resultDICT:
                 break
+        
 
     return resultDICT
 
