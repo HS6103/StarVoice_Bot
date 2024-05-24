@@ -19,7 +19,7 @@ from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
 app = Flask(__name__)
 
-@app.route("/", methods=['POST'])
+@app.route("/", methods=['POST', 'GET'])
 
 def linebot():
     
