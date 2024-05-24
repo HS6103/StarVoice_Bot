@@ -19,18 +19,12 @@ from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
 app = Flask(__name__)
 
-@app.route("/", methods=['POST', 'GET'])
-
+@app.route("/", methods=['POST'])
 def linebot():
-    filterLIST = []
-    splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
-    refDICT = { # value 必須為 list
-        #"key": []
-    }    
     
-    body = request.get_data(as_text=True)                    # 取得收到的訊息內容
-
-    json_data = json.load(body)                         # json 格式化訊息內容
+    body = request.get_data(as_text=True)                # 取得收到的訊息內容
+    
+    json_data = json.loads(body)                         # json 格式化訊息內容
     access_token = os.environ.get("access_token")
     secret = os.environ.get("channel_secret")
     line_bot_api = LineBotApi(access_token)              # 確認 token 是否正確
@@ -43,6 +37,13 @@ def linebot():
     if type=='text':
         msg = json_data['events'][0]['message']['text']  # 取得 LINE 收到的文字訊息
         print(msg)                                       # 印出內容
+        
+        filterLIST = []
+        splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
+        refDICT = { # value 必須為 list
+            #"key": []
+        }
+        
         resultDICT = execLoki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷
         
         if resultDICT != {}:
