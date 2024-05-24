@@ -6,7 +6,7 @@ from sys import path
 import os
 
 #將所在路徑加入系統路徑載入 execLoki
-path.append(os.getcwd() + "\\starvoice")
+path.append(os.getcwd() + "/starvoice")
 from starvoice.starvoice import execLoki
 
 # 載入 json 標準函式庫，處理回傳的資料格式
