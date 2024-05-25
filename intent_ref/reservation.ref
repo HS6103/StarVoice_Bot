@@ -1,0 +1,38 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v270",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "as_noun": [
+            "社費",
+            "KB",
+            "團室",
+            "練團室",
+            "社課",
+            "吉他",
+            "結他",
+            "貝斯",
+            "bass",
+            "PA",
+            "主唱",
+            "鼓",
+            "爵士鼓"
+        ]
+    },
+    "utterance": {
+        "預訂團室": {
+            "id": "52dbeecf-3d16-4b3f-925f-cd0192d8e599",
+            "pos": "<ACTION_verb>預訂</ACTION_verb><ENTITY_nouny>團室</ENTITY_nouny>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(預訂|訂位|預留|預約|保留|候補|備用|退款|訂房|預售|付款)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>預[訂定約]</(ACTION_verb|VerbP)>(.*?)<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(團室|練團室)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}

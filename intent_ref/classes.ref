@@ -1,0 +1,52 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v270",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "as_noun": [
+            "社費",
+            "KB",
+            "團室",
+            "練團室",
+            "社課",
+            "吉他",
+            "結他",
+            "貝斯",
+            "bass",
+            "PA",
+            "主唱",
+            "鼓",
+            "爵士鼓"
+        ]
+    },
+    "utterance": {
+        "有社課嗎": {
+            "id": "cdc47fcb-e6ab-4052-9f96-ba71973d214d",
+            "pos": "<ACTION_verb>有</ACTION_verb><UserDefined>社課</UserDefined><CLAUSE_YesNoQ>嗎</CLAUSE_YesNoQ>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>([^<]+)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>社?課</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<CLAUSE_YesNoQ>[^<]+</CLAUSE_YesNoQ>)?"
+        },
+        "有什麼社課": {
+            "id": "87482581-741b-4786-be44-1802c6701d10",
+            "pos": "<ACTION_verb>有</ACTION_verb><CLAUSE_WhatQ>什麼</CLAUSE_WhatQ><UserDefined>社課</UserDefined>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)><CLAUSE_WhatQ>[^<]+</CLAUSE_WhatQ><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>社?課</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "吉他社課是什麼時候": {
+            "id": "e07ed981-07ed-4200-843a-f286a65b2db4",
+            "pos": "<ENTITY_noun>吉他</ENTITY_noun><UserDefined>社課</UserDefined><AUX>是</AUX><CLAUSE_WhenQ>什麼</CLAUSE_WhenQ><ENTITY_oov>時候</ENTITY_oov>",
+            "lexy": [],
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>([^<]+)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>社?課</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><AUX>[^<]+</AUX>(<CLAUSE_WhenQ>[^<]+</CLAUSE_WhenQ><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(時候|時間)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>|<CLAUSE_HowQ>幾</CLAUSE_HowQ><QUANTIFIER>點</QUANTIFIER>|<TIME_(holiday|justtime|day|week|month|season|year|decade)>(星期|禮拜)</TIME_(holiday|justtime|day|week|month|season|year|decade)>{1,10}<CLAUSE_HowQ>幾</CLAUSE_HowQ>)"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}
