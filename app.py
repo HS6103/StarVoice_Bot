@@ -4,6 +4,7 @@
 from flask import Flask, request
 from sys import path
 import os
+import logging
 
 #將所在路徑加入系統路徑載入 execLoki
 path.append(os.getcwd() + "/starvoice")
@@ -41,17 +42,16 @@ def linebot():
             
             filterLIST = []
             splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
-            refDICT = { # value 必須為 list
-                #"key": []
-            }
+            refDICT = {}
             
-            resultDICT = execLoki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷
-            #print(resultDICT['msg'])
-            
-            if resultDICT != {}:
-                reply = resultDICT["response"][0]            #回傳回覆字串
+            if msg.lower() in ["哈囉","嗨","你好","您好","hi","hello"]:
+                reply = msg + "\n" + "我是陽明交大星聲社客服機器人\n請問您今天想問什麼呢?"
             else:
-                reply = "抱歉，我只是個機器人，沒辦法回答喔"    #回傳/沒有答案時的預設回覆字串
+                resultDICT = execLoki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷
+                if resultDICT != {}:
+                    reply = resultDICT["response"][0]            #回傳回覆字串
+                else:
+                    reply = "抱歉，我只是個機器人，沒辦法回答喔"    #回傳/沒有答案時的預設回覆字串
                 
         else:
             reply = '你傳的不是文字呦～請再試一次'
