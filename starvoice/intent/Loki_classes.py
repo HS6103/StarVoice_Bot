@@ -85,24 +85,24 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             if CHATBOT_MODE:
-                if args[3] == None:
+                if args[2] == None:
                     resultDICT["response"] = getResponse("有社課嗎", args)
                 else:
-                    args[3] = args[3].replace(" ", "").lower()
-                    if args[3] in ["鼓", "爵士鼓"]:
+                    args[2] = args[2].replace(" ", "").lower()
+                    if args[2] in ["鼓", "爵士鼓"]:
                         resultDICT["response"] = getResponse("鼓社課是什麼時候", args)
-                    elif args[3] in ["pa"]:
+                    elif args[2] in ["pa"]:
                         resultDICT["response"] = getResponse("PA社課是什麼時候", args)                
-                    elif args[3] in ["貝斯", "bass"]:
+                    elif args[2] in ["貝斯", "bass"]:
                         resultDICT["response"] = getResponse("貝斯社課是什麼時候", args)
-                    elif args[3] in ["kb", "keyboard"]:
+                    elif args[2] in ["kb", "keyboard"]:
                         resultDICT["response"] = getResponse("KB社課是什麼時候", args)
-                    elif args[3] in ["主唱", "vocal"]:
+                    elif args[2] in ["主唱", "vocal"]:
                         resultDICT["response"] = getResponse("主唱社課是什麼時候", args)
-                    elif args[3] in ["吉他", "結他"]:
+                    elif args[2] in ["吉他", "結他"]:
                         resultDICT["response"] = getResponse("吉他社課是什麼時候", args)
                     else:
-                        resultDICT["response"] = "抱歉，我們沒有{}社課喔!".format(args[3])
+                        resultDICT["response"] = "抱歉，我們沒有{}社課喔!".format(args[2])
             else:
                 pass
 
