@@ -5,3 +5,4 @@ __pycache__
 line_credit.json
 .env
 ngrok.exe
+*.png
