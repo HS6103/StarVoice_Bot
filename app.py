@@ -6,8 +6,6 @@ from sys import path
 import os
 import logging
 
-#將所在路徑加入系統路徑載入 execLoki
-
 from reserve_bot import execLoki as reserve_loki
 from starvoice import execLoki as qa_loki
 
@@ -52,7 +50,7 @@ def linebot():
                 reply = "掰掰，謝謝您的使用，期待下次為您服務!"
                 
             else:
-                resultDICT = reserve_loki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷
+                resultDICT = reserve_loki(str(msg), filterLIST=[], refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷
                 print("loki complete")
                 print(resultDICT)
                 if resultDICT != {}:
