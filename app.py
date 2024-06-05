@@ -7,8 +7,9 @@ import os
 import logging
 
 #將所在路徑加入系統路徑載入 execLoki
-path.append(os.getcwd() + "/starvoice")
-from starvoice.starvoice import execLoki
+path.append(os.getcwd() + "/Loki_model")
+from Loki_model.starvoice.starvoice import execLoki as QA_Loki
+from Loki_model.reserve_bot.reserve_bot import execLoki as reserve_Loki
 
 # 載入 json 標準函式庫，處理回傳的資料格式
 import json
@@ -45,13 +46,23 @@ def linebot():
             refDICT = {}
             
             if msg.lower() in ["哈囉","嗨","你好","您好","hi","hello"]:
-                reply = msg + "\n" + "我是陽明交大星聲社客服機器人\n請問您今天想問什麼呢?"
+                reply = msg + "\n" + "我是陽明交大星聲社機器人\n請問您今天想問什麼呢?"
+                
+            elif msg.lower() in ["掰掰","掰","88","bye bye","bye","再見", "沒有", "拜拜"]:
+                reply = "掰掰，謝謝您的使用，期待下次為您服務!"
+                
             else:
-                resultDICT = execLoki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷
-                if resultDICT != {}:
+                resultDICT = reserve_Loki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷
+                if resultDICT != {}:                        
                     reply = resultDICT["response"][0]            #回傳回覆字串
                 else:
-                    reply = "抱歉，我只是個機器人，沒辦法回答喔"    #回傳/沒有答案時的預設回覆字串
+                    resultDICT = QA_Loki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷
+                    if resultDICT != {}:                        
+                        reply = resultDICT["response"][0]            #回傳回覆字串
+                    else:
+                        reply = "抱歉，我只是個機器人，沒辦法回答喔"    #回傳/沒有答案時的預設回覆字串
+                    
+                    
                 
         else:
             reply = '你傳的不是文字呦～請再試一次'

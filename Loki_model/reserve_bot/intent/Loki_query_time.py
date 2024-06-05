@@ -87,8 +87,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
+            resultDICT["response"] = "請問你要預約的是「{}」對嗎?".format(args[0])
             pass
 
     if utterance == "[8].~[10].":
