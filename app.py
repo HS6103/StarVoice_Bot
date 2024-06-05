@@ -7,7 +7,9 @@ import os
 import logging
 
 #將所在路徑加入系統路徑載入 execLoki
-path.append(os.getcwd() + "/Loki_model")
+path.append(os.getcwd() + "Loki_model/starvoice")
+path.append(os.getcwd() + "Loki_model/reserve_bot")
+
 from Loki_model.starvoice.starvoice import execLoki as QA_Loki
 from Loki_model.reserve_bot.reserve_bot import execLoki as reserve_Loki
 
