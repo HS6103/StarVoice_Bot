@@ -7,11 +7,11 @@ import os
 import logging
 
 #將所在路徑加入系統路徑載入 execLoki
-path.append(os.getcwd() + "/Loki_model/starvoice")
-path.append(os.getcwd() + "/Loki_model/reserve_bot")
+path.append(os.getcwd() + "/starvoice")
+path.append(os.getcwd() + "/reserve_bot")
 
-from Loki_model.starvoice.starvoice import execLoki as QA_Loki
-from Loki_model.reserve_bot.reserve_bot import execLoki as reserve_Loki
+from starvoice.starvoice import execLoki as QA_Loki
+from reserve_bot.reserve_bot import execLoki as reserve_Loki
 
 # 載入 json 標準函式庫，處理回傳的資料格式
 import json
