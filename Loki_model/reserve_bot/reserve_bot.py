@@ -97,9 +97,9 @@ class LokiResult():
 
         try:
             result = post(LOKI_URL, json={
-                "username": USERNAME,
+                "username": os.environ.get("loki_username"),
                 "input_list": inputLIST,
-                "loki_key": LOKI_KEY,
+                "loki_key": os.environ.get("loki_key_reserve"),
                 "filter_list": filterLIST
             })
 
