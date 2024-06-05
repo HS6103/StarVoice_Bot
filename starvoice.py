@@ -41,6 +41,7 @@
             ]
         }
 """
+from sys import path
 from copy import deepcopy
 from glob import glob
 from importlib import import_module
@@ -52,11 +53,10 @@ import math
 import os
 import re
 
-
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 
 lokiIntentDICT = {}
-for modulePath in glob("{}/intent/Loki_*.py".format(BASE_PATH)):
+for modulePath in glob("{}\\intent_QA\\Loki_*.py".format(BASE_PATH)):
     moduleNameSTR = Path(modulePath).stem[5:]
     modulePathSTR = modulePath.replace(BASE_PATH, "").replace(".py", "").replace("/", ".").replace("\\", ".")[1:]
     globals()[moduleNameSTR] = import_module(modulePathSTR)

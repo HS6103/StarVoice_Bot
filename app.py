@@ -7,11 +7,9 @@ import os
 import logging
 
 #將所在路徑加入系統路徑載入 execLoki
-path.append(os.getcwd() + "/starvoice")
-path.append(os.getcwd() + "/reserve_bot")
 
-from starvoice.starvoice import execLoki as QA_Loki
-from reserve_bot.reserve_bot import execLoki as reserve_Loki
+from reserve_bot import execLoki as reserve_loki
+from starvoice import execLoki as qa_loki
 
 # 載入 json 標準函式庫，處理回傳的資料格式
 import json
@@ -54,14 +52,14 @@ def linebot():
                 reply = "掰掰，謝謝您的使用，期待下次為您服務!"
                 
             else:
-                resultDICT = reserve_Loki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷
+                resultDICT = reserve_loki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷
                 if resultDICT != {}:
                     if "query_time" not in resultDICT["intent"]:                        
                         reply = "請輸入你要預約的時段!\n例如: 星期五晚上8點到10點"
                     else:
                         reply = resultDICT["response"][0]            #回傳回覆字串
                 else:
-                    resultDICT = QA_Loki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷
+                    resultDICT = qa_loki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷
                     if resultDICT != {}:                        
                         reply = resultDICT["response"][0]            #回傳回覆字串
                     else:

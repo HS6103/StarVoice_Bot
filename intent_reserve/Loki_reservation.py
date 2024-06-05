@@ -21,7 +21,7 @@ import json
 import os
 
 DEBUG = True
-CHATBOT_MODE = True
+CHATBOT_MODE = False
 
 userDefinedDICT = {}
 try:
@@ -54,8 +54,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     if utterance == "預訂團室":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
-            resultDICT["intent"] = 'reservation'
         else:
-            pass
-
+            resultDICT["intent"] = 'reservation'
+            
     return resultDICT

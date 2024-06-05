@@ -41,7 +41,7 @@
             ]
         }
 """
-
+from sys import path
 from copy import deepcopy
 from glob import glob
 from importlib import import_module
@@ -55,22 +55,15 @@ import re
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 
+
 lokiIntentDICT = {}
-for modulePath in glob("{}/intent/Loki_*.py".format(BASE_PATH)):
+for modulePath in glob("{}\\intent_reserve\\Loki_*.py".format(BASE_PATH)):
     moduleNameSTR = Path(modulePath).stem[5:]
     modulePathSTR = modulePath.replace(BASE_PATH, "").replace(".py", "").replace("/", ".").replace("\\", ".")[1:]
     globals()[moduleNameSTR] = import_module(modulePathSTR)
     lokiIntentDICT[moduleNameSTR] = globals()[moduleNameSTR]
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
-try:
-    accountInfo = json.load(open(os.path.join(BASE_PATH, "account.info"), encoding="utf-8"))
-    USERNAME = accountInfo["username"]
-    LOKI_KEY = accountInfo["loki_key"]
-except Exception as e:
-    print("[ERROR] AccountInfo => {}".format(str(e)))
-    USERNAME = ""
-    LOKI_KEY = ""
 
 # 意圖過濾器說明
 # INTENT_FILTER = []        => 比對全部的意圖 (預設)
