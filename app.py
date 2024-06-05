@@ -53,8 +53,11 @@ def linebot():
                 
             else:
                 resultDICT = reserve_Loki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷
-                if resultDICT != {}:                        
-                    reply = resultDICT["response"][0]            #回傳回覆字串
+                if resultDICT != {}:
+                    if "query_time" not in resultDICT["intent"]:                        
+                        reply = "請輸入你要預約的時段!\n例如: 星期五晚上8點到10點"
+                    else:
+                        reply = resultDICT["response"][0]            #回傳回覆字串
                 else:
                     resultDICT = QA_Loki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷
                     if resultDICT != {}:                        
