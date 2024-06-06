@@ -55,8 +55,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
+            if args[0] in ["團室", "練團室", "鼓室", "練鼓室"]:
+                resultDICT["location"] = args[0]
 
     return resultDICT

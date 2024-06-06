@@ -19,6 +19,8 @@
 from random import sample
 import json
 import os
+from ArticutAPI import Articut
+
 
 DEBUG = True
 CHATBOT_MODE = False
@@ -51,92 +53,73 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
+    articut = Articut(username=os.environ.get("loki_username"), apikey=os.environ.get("articut_key"))
+    
     if utterance == "[7].":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
+            resultDICT["time"] = inputSTR
 
     if utterance == "[7].[半]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
+            resultDICT["time"] = inputSTR
 
     if utterance == "[7]:[00]~[9]:[00]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
+            resultDICT["time"] = inputSTR
 
     if utterance == "[7]:[00]到[9]:[00]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
+            resultDICT["time"] = inputSTR
 
     if utterance == "[7點半]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["intent"] = "query_time"
-            resultDICT["response"] = "請問你要預約的是「{}」對嗎?".format(args[0])
-            pass
+            articut_time = articut.parse(inputSTR, level="lv3")
+            resultDICT["time"] = articut_time["time"][0][0]["datetime"]
 
     if utterance == "[8].~[10].":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
+            resultDICT["time"] = inputSTR
 
     if utterance == "[七點半][之後]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
+            resultDICT["time"] = inputSTR
 
     if utterance == "[早上][8].~[10].":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
+            resultDICT["time"] = inputSTR
 
     if utterance == "[晚上][7].":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
+            resultDICT["time"] = inputSTR
 
     if utterance == "[晚上][7].到[9].":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
+            resultDICT["time"] = inputSTR
 
     if utterance == "[晚上七點]到[九點]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
-            pass
+            resultDICT["time"] = inputSTR
 
     return resultDICT

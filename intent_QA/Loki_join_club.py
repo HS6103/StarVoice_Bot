@@ -56,6 +56,19 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             pass
+        
+    if utterance == "想加入你們":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
+    if utterance == "成為社員":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
     if utterance == "怎麼加入":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
