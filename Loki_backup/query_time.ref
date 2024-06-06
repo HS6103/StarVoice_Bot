@@ -1,6 +1,6 @@
 {
     "language": "zh-tw",
-    "type": "advance",
+    "type": "basic",
     "version": {
         "atk": "v270",
         "intent": "1.0"
@@ -12848,13 +12848,462 @@
         ]
     },
     "utterance": {
-        "預訂團室": {
-            "id": "52dbeecf-3d16-4b3f-925f-cd0192d8e599",
-            "pos": "<ACTION_verb>預訂</ACTION_verb><ENTITY_nouny>團室</ENTITY_nouny>",
-            "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(預訂|訂位|預留|預約|保留|候補|備用|退款|訂房|預售|付款)</(ACTION_verb|VerbP)>"
-            ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[想預訂定約借]+</(ACTION_verb|VerbP)>(.*?)<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(團室|練團室)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        "7.": {
+            "id": "6d2fc73b-a979-4aa0-bf14-b17d073dcc4e",
+            "argument": [
+                {
+                    "pos": "ENTITY_num",
+                    "text": "7",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": ".",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "7.半": {
+            "id": "512c22c2-2e13-423e-b7bc-4b000748b5fd",
+            "argument": [
+                {
+                    "pos": "ENTITY_num",
+                    "text": "7",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": ".",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "半",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "8.~10.": {
+            "id": "0e93f0b7-45a6-4500-8da9-e6f1de964cb6",
+            "argument": [
+                {
+                    "pos": "ENTITY_num",
+                    "text": "8",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": ".",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "~",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_num",
+                    "text": "10",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": ".",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "7點半": {
+            "id": "8234fe9c-c139-4ead-bbab-f3796b5d2958",
+            "argument": [
+                {
+                    "pos": "TIME_justtime",
+                    "text": "7點",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "TIME_justtime",
+                    "text": "半",
+                    "checked": true,
+                    "checkbox": false
+                }
+            ]
+        },
+        "晚上7.": {
+            "id": "17fac164-48af-4f2f-a81c-a2ada18b9ef5",
+            "argument": [
+                {
+                    "pos": "TIME_day",
+                    "text": "晚上",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_num",
+                    "text": "7",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": ".",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "7:00~9:00": {
+            "id": "15a824ed-cb6a-4865-88c6-5ebad3bbd4e6",
+            "argument": [
+                {
+                    "pos": "ENTITY_num",
+                    "text": "7",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": ":",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_num",
+                    "text": "00",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "~",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_num",
+                    "text": "9",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": ":",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_num",
+                    "text": "00",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "7:00到9:00": {
+            "id": "5988e76f-239f-4240-a4f1-726618a78172",
+            "argument": [
+                {
+                    "pos": "ENTITY_num",
+                    "text": "7",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": ":",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_num",
+                    "text": "00",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "到了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到約",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到受",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到離",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到包",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到經過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到回",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到隨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到死",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到經",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "到",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_num",
+                    "text": "9",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": ":",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_num",
+                    "text": "00",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "早上8.~10.": {
+            "id": "ea7c8d5e-ae3e-4ffd-b58c-e99d0578ed68",
+            "argument": [
+                {
+                    "pos": "TIME_day",
+                    "text": "早上",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_num",
+                    "text": "8",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": ".",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "~",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_num",
+                    "text": "10",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": ".",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "晚上7.到9.": {
+            "id": "32854a80-6a47-4ea1-966a-4d173dff535d",
+            "argument": [
+                {
+                    "pos": "TIME_day",
+                    "text": "晚上",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_num",
+                    "text": "7",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": ".",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "到了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到約",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到受",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到離",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到包",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到經過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到回",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到隨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到死",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到經",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "到",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_num",
+                    "text": "9",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": ".",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "七點半之後": {
+            "id": "c08adec5-cb1a-4496-be96-00cc88d17eda",
+            "argument": [
+                {
+                    "pos": "TIME_justtime",
+                    "text": "七點",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "TIME_justtime",
+                    "text": "半",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "RANGE_period",
+                    "text": "之後",
+                    "checked": true,
+                    "checkbox": false
+                }
+            ]
+        },
+        "晚上七點到九點": {
+            "id": "1b8085f0-190e-4429-95ea-a145ae84001f",
+            "argument": [
+                {
+                    "pos": "TIME_day",
+                    "text": "晚上",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "TIME_justtime",
+                    "text": "七點",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "AUX",
+                    "text": "到",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "TIME_justtime",
+                    "text": "九點",
+                    "checked": true,
+                    "checkbox": false
+                }
+            ]
         }
     },
     "alias": {},

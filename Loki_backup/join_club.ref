@@ -176,19 +176,20 @@
             "闖關"
         ],
         "as_noun": [
-            "KB",
-            "PA",
-            "bass",
-            "主唱",
-            "吉他",
-            "團室",
-            "爵士鼓",
-            "社課",
             "社費",
-            "結他",
+            "KB",
+            "團室",
             "練團室",
+            "社課",
+            "吉他",
+            "結他",
             "貝斯",
-            "鼓"
+            "bass",
+            "PA",
+            "主唱",
+            "鼓",
+            "爵士鼓",
+            "社員"
         ],
         "_schoolTW": [
             "一甲國中",
@@ -12848,13 +12849,38 @@
         ]
     },
     "utterance": {
-        "預訂團室": {
-            "id": "52dbeecf-3d16-4b3f-925f-cd0192d8e599",
-            "pos": "<ACTION_verb>預訂</ACTION_verb><ENTITY_nouny>團室</ENTITY_nouny>",
+        "怎麼加入": {
+            "id": "98139b53-2841-4d32-a9e3-19321b460d29",
+            "pos": "<CLAUSE_HowQ>怎麼</CLAUSE_HowQ><ACTION_verb>加入</ACTION_verb>",
             "lexy": [
-                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(預訂|訂位|預留|預約|保留|候補|備用|退款|訂房|預售|付款)</(ACTION_verb|VerbP)>"
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(加入|加上|加添|加盟|加總|加進|參加|添加|交結|交融|併吞)</(ACTION_verb|VerbP)>"
             ],
-            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>[想預訂定約借]+</(ACTION_verb|VerbP)>(.*?)<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(團室|練團室)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+            "pattern": "<CLAUSE_HowQ>[^<]+</CLAUSE_HowQ><(ACTION_verb|VerbP)>加入</(ACTION_verb|VerbP)>"
+        },
+        "想加社團": {
+            "id": "f9ea8c08-cb0f-4065-b800-9a92d438ec76",
+            "pos": "<ACTION_verb>想加</ACTION_verb><ENTITY_noun>社團</ENTITY_noun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想加|上茶|常佐|下據|經施|持傾|殺止|示信)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "<(ACTION_verb|VerbP)>(想加|加入|參加)</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>社團</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "成為社員": {
+            "id": "514b8dd7-5c12-46cc-898f-b035bbdaec73",
+            "pos": "<ACTION_verb>成為</ACTION_verb><UserDefined>社員</UserDefined>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(成為|化作|變作|發展成|成為了|淪為了|變成|成了|變成了|視為|轉變成)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>成為</(ACTION_verb|VerbP)><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>社員</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "想加入你們": {
+            "id": "4603152d-f912-4e41-967e-0ee977c56102",
+            "pos": "<ACTION_verb>想</ACTION_verb><ACTION_verb>加入</ACTION_verb><ENTITY_pronoun>你們</ENTITY_pronoun>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(想|假想|冥想|回想|想像|想出|想到|想念|想拿|想望|想要)</(ACTION_verb|VerbP)>",
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(加入|加上|加添|加盟|加總|加進|參加|添加|交結|交融|併吞)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>想</(ACTION_verb|VerbP)><(ACTION_verb|VerbP)>加入</(ACTION_verb|VerbP)><ENTITY_pronoun>你們</ENTITY_pronoun>"
         }
     },
     "alias": {},
