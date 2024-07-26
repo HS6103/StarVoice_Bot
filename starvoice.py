@@ -64,6 +64,18 @@ for modulePath in glob("{}\\intent_QA\\Loki_*.py".format(BASE_PATH)):
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
 
+# 載入username和loki_key
+# 若找不到account.info則設為None
+try:
+    with open("account.info", encoding="utf-8") as f:
+        accountDICT = json.load(f)
+        username = accountDICT['username']
+        loki_key = accountDICT['loki_key']
+        
+except Exception:
+    username = None
+    loki_key = None
+
 # 意圖過濾器說明
 # INTENT_FILTER = []        => 比對全部的意圖 (預設)
 # INTENT_FILTER = [intentN] => 僅比對 INTENT_FILTER 內的意圖
@@ -88,12 +100,20 @@ class LokiResult():
             filterLIST = INTENT_FILTER
 
         try:
-            result = post(LOKI_URL, json={
-                "username": os.environ.get("loki_username"),
-                "input_list": inputLIST,
-                "loki_key": os.environ.get("loki_key"),
-                "filter_list": filterLIST
-            })            
+            if username == None and loki_key == None:                 # 若 username 和 loki_key 為 None 則從 .env 載入  
+                result = post(LOKI_URL, json={
+                    "username": os.environ.get('loki_username'),
+                    "input_list": inputLIST,
+                    "loki_key": os.environ.get('loki_key'),
+                    "filter_list": filterLIST
+                })
+            else:
+                result = post(LOKI_URL, json={
+                    "username": username, 
+                    "input_list": inputLIST,
+                    "loki_key": loki_key,
+                    "filter_list": filterLIST
+                })
 
             if result.status_code == codes.ok:
                 result = result.json()
