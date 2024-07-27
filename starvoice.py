@@ -41,6 +41,7 @@
             ]
         }
 """
+from sys import path
 from copy import deepcopy
 from glob import glob
 from importlib import import_module
@@ -52,24 +53,28 @@ import math
 import os
 import re
 
-
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 
 lokiIntentDICT = {}
-for modulePath in glob("{}/intent/Loki_*.py".format(BASE_PATH)):
+for modulePath in glob("{}\\intent_QA\\Loki_*.py".format(BASE_PATH)):
     moduleNameSTR = Path(modulePath).stem[5:]
     modulePathSTR = modulePath.replace(BASE_PATH, "").replace(".py", "").replace("/", ".").replace("\\", ".")[1:]
     globals()[moduleNameSTR] = import_module(modulePathSTR)
     lokiIntentDICT[moduleNameSTR] = globals()[moduleNameSTR]
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
-#try:
-    #USERNAME = os.getenv("loki_username")
-    #LOKI_KEY = os.getenv("loki_key")
-#except Exception as e:
-    #print("[ERROR] AccountInfo => {}".format(str(e)))
-    #USERNAME = ""
-    #LOKI_KEY = ""
+
+# 載入username和loki_key
+# 若找不到account.info則設為None
+try:
+    with open("account.info", encoding="utf-8") as f:
+        accountDICT = json.load(f)
+        username = accountDICT['username']
+        loki_key = accountDICT['loki_key']
+        
+except Exception:
+    username = None
+    loki_key = None
 
 # 意圖過濾器說明
 # INTENT_FILTER = []        => 比對全部的意圖 (預設)
@@ -95,14 +100,20 @@ class LokiResult():
             filterLIST = INTENT_FILTER
 
         try:
-            result = post(LOKI_URL, json={
-                "username": os.environ.get("loki_username"),
-                "input_list": inputLIST,
-                "loki_key": os.environ.get("loki_key"),
-                "filter_list": filterLIST
-            })
-            print("result ok")
-            
+            if username == None and loki_key == None:                 # 若 username 和 loki_key 為 None 則從 .env 載入  
+                result = post(LOKI_URL, json={
+                    "username": os.environ.get('loki_username'),
+                    "input_list": inputLIST,
+                    "loki_key": os.environ.get('loki_key'),
+                    "filter_list": filterLIST
+                })
+            else:
+                result = post(LOKI_URL, json={
+                    "username": username, 
+                    "input_list": inputLIST,
+                    "loki_key": loki_key,
+                    "filter_list": filterLIST
+                })
 
             if result.status_code == codes.ok:
                 result = result.json()
@@ -184,7 +195,6 @@ class LokiResult():
         return rst
 
 def runLoki(inputLIST, filterLIST=[], refDICT={}):
-    print("running loki")
     resultDICT = deepcopy(refDICT)
     lokiRst = LokiResult(inputLIST, filterLIST)
     if lokiRst.getStatus():
@@ -206,7 +216,7 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                     resultDICT[k].extend(lokiResultDICT[k])
                 else:
                     resultDICT[k].append(lokiResultDICT[k])
-            print("loki done")
+                    
     else:
         resultDICT["msg"] = lokiRst.getMessage()
     return resultDICT
@@ -290,7 +300,7 @@ if __name__ == "__main__":
     refDICT = { # value 必須為 list
         #"key": []
     }
-    resultDICT = execLoki("預訂團室", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
-    print(resultDICT["response"][0])
+    resultDICT = execLoki("訂禮拜五晚上的團室", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
+    print(resultDICT)
     #resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, splitLIST=splitLIST, refDICT=refDICT) # output => {"key": ["今天天氣", "後天氣象"]}
     #resultDICT = execLoki(["今天天氣如何？", "後天氣象如何？"], filterLIST=filterLIST, refDICT=refDICT)                # output => {"key": ["今天天氣", "後天氣象"]}

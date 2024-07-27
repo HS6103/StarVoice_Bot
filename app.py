@@ -6,9 +6,8 @@ from sys import path
 import os
 import logging
 
-#將所在路徑加入系統路徑載入 execLoki
-path.append(os.getcwd() + "/starvoice")
-from starvoice.starvoice import execLoki
+from reserve_bot import execLoki as reserve_loki
+from starvoice import execLoki as qa_loki
 
 # 載入 json 標準函式庫，處理回傳的資料格式
 import json
@@ -36,6 +35,7 @@ def linebot():
         tk = json_data['events'][0]['replyToken']            # 取得回傳訊息的 Token
         type = json_data['events'][0]['message']['type']     # 取得 LINE 收到的訊息類型
         
+        ############### message handling ###############
         if type=='text':
             msg = json_data['events'][0]['message']['text']  # 取得 LINE 收到的文字訊息
             print(msg)                                       # 印出內容
@@ -45,16 +45,35 @@ def linebot():
             refDICT = {}
             
             if msg.lower() in ["哈囉","嗨","你好","您好","hi","hello"]:
-                reply = msg + "\n" + "我是陽明交大星聲社客服機器人\n請問您今天想問什麼呢?"
-            else:
-                resultDICT = execLoki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷
-                if resultDICT != {}:
-                    reply = resultDICT["response"][0]            #回傳回覆字串
-                else:
-                    reply = "抱歉，我只是個機器人，沒辦法回答喔"    #回傳/沒有答案時的預設回覆字串
+                reply = msg + "\n" + "我是陽明交大星聲社機器人\你可以用我來問問題或預約團室\n請問您今天想問什麼呢?"
                 
+            elif msg.lower() in ["掰掰","掰","88","bye bye","bye","再見", "沒有", "拜拜"]:
+                reply = "掰掰，謝謝您的使用，期待下次為您服務!"
+                
+            else:
+                try:
+                    resultDICT = reserve_loki(str(msg), filterLIST=[], refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷是否為預約intent
+                    print("loki complete")
+                    print(resultDICT)
+                    
+                    if resultDICT != {}:
+                        if resultDICT["time"] == None:                        
+                            reply = "請輸入你要預約的時段!\n例如: 星期五晚上8點到10點"
+                        else:
+                            reply = "了解，你要預約「{}」的{}".format(resultDICT["time"][0], resultDICT["location"][0])            #回傳回覆字串
+                            
+                    else:
+                        resultDICT = qa_loki(str(msg), filterLIST=filterLIST, refDICT=refDICT, splitLIST=splitLIST)   #Loki語意判斷是否為QA intent
+                        if resultDICT != {}:                        
+                            reply = resultDICT["response"][0]            #回傳回覆字串
+                        else:
+                            reply = "抱歉，我只是個機器人，沒辦法回答喔"    #回傳/沒有答案時的預設回覆字串
+                            
+                except:
+                    reply = "抱歉發生一些問題~請再試一次"   #非文字訊息回覆
+                        
         else:
-            reply = '你傳的不是文字呦～請再試一次'
+            reply = '不是文字，我可是不吃的喔~請再試一次'   #非文字訊息回覆
             
         print(reply)
         line_bot_api.reply_message(tk,TextSendMessage(reply)) # 回傳訊息
