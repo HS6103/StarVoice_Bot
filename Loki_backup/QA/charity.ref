@@ -1,0 +1,2203 @@
+{
+    "language": "zh-tw",
+    "type": "basic",
+    "version": {
+        "atk": "v270",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "as_adj": [
+            "熱血",
+            "振奮人心"
+        ],
+        "as_noun": [
+            "KB",
+            "PA",
+            "bass",
+            "主唱",
+            "吉他",
+            "團室",
+            "爵士鼓",
+            "社員",
+            "社課",
+            "社費",
+            "結他",
+            "練團室",
+            "貝斯",
+            "鼓",
+            "星聲社",
+            "非社團成員",
+            "校外人士",
+            "社辦",
+            "社團",
+            "學長",
+            "想法",
+            "東西",
+            "樂團"
+        ],
+        "as_verb": [
+            "練團"
+        ]
+    },
+    "utterance": {
+        "星聲社舉辦過什麼募款活動": {
+            "id": "16b185f0-e66d-4895-ab1a-db205dbaf038",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "VerbP",
+                    "lexy": [
+                        {
+                            "text": "舉行",
+                            "level": "tier_1",
+                            "checked": true
+                        },
+                        {
+                            "text": "獲得過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行過",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "參加過",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "參與過",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "贏得過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦了",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "爆發過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "主辦過",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "辦過",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "舉行",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "辦",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "出席",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "主辦",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "參加",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "參與",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲得",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "爆發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "贏得",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "舉辦過",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "募捐",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "捐款",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "籌款",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "籌募",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "捐助",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "募集",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "勸募",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "募資",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "集資",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "義賣",
+                            "level": "word2vec",
+                            "checked": true
+                        }
+                    ],
+                    "text": "募款",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "星聲社是否有舉辦過募款活動": {
+            "id": "c49dd20d-feeb-4e04-939e-e3e96e215749",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "是否",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "VerbP",
+                    "lexy": [
+                        {
+                            "text": "舉行",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "主辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲得過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "贏得過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "爆發過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "主辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲得",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "爆發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "贏得",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "舉辦過",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "募捐",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "捐款",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "籌款",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "籌募",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "捐助",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "募集",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "勸募",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "募資",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "集資",
+                            "level": "word2vec",
+                            "checked": true
+                        },
+                        {
+                            "text": "義賣",
+                            "level": "word2vec",
+                            "checked": true
+                        }
+                    ],
+                    "text": "募款",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "星聲社參與過哪些社會服務的活動": {
+            "id": "01e4dd07-1fdd-48cd-962f-4dc8e697729e",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "VerbP",
+                    "lexy": [
+                        {
+                            "text": "參加",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "與會",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "嘗試過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "演出過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "嘗試",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "演出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "參與過",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "哪些",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "社會",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "事奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "侍奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "運營",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "營運",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "照護",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "服務",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "星聲社是否有參與社會服務的活動": {
+            "id": "96d1387d-b851-4ae1-95e1-7a566e7a24f9",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "是否",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "參加",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "與會",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發起",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "從事",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "參與",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "社會",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "事奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "侍奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "照護",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "運營",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "營運",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "服務",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "星聲社參與過哪些人權或社會正義的活動": {
+            "id": "c8c826b0-99a4-4ddf-8dfc-7e2ea597328c",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "VerbP",
+                    "lexy": [
+                        {
+                            "text": "參加",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "與會",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "嘗試過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "演出過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "嘗試",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "演出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "參與過",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "哪些",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "人權",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "或",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "社會",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "正義",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "星聲社參與過哪些志願服務或公益的活動": {
+            "id": "fd575928-afad-41d0-a7b6-a6a313028b87",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "VerbP",
+                    "lexy": [
+                        {
+                            "text": "參加",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "與會",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "嘗試過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "演出過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "嘗試",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "演出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "參與過",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "哪些",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "志願",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "事奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "侍奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "運營",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "營運",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "照護",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "服務",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "或",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "公益",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "星聲社參與過哪些環保或永續發展的活動": {
+            "id": "2d53f6f5-2cc5-4376-9b6e-a98e0be839db",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "VerbP",
+                    "lexy": [
+                        {
+                            "text": "參加",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "與會",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "嘗試過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "演出過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "嘗試",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "演出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "參與過",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "哪些",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "環保",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "或",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "永續",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "拓展",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "推展",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "培養",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "增加",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "打造",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "研發",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "研製",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開發",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "擴展",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擴張",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "演進",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "成長",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推進",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉型",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "發展",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "星聲社是否有參與人權或社會正義的活動": {
+            "id": "15f6f3c6-1180-476b-a0d1-6cf88fa0418a",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "是否",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "參加",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "與會",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發起",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "從事",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "參與",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "人權",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "或",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "社會",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "正義",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "星聲社是否有參與環保或永續發展的活動": {
+            "id": "8b73cc08-2304-496b-ae1d-3d43df7b44a7",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "是否",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "參加",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "與會",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發起",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "從事",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "參與",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "環保",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "或",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "永續",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "拓展",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "推展",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "培養",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "增加",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "打造",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "研發",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "研製",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開發",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "成長",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "演進",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉型",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擴展",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擴張",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推進",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "發展",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "星聲社有沒有參與志願服務或公益的活動": {
+            "id": "14f50425-fb84-4467-8e2b-684dbdd89662",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "有沒有",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "參加",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "與會",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發起",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "從事",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "參與",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "志願",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "事奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "侍奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "照護",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "運營",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "營運",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "服務",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "或",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "公益",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}

@@ -1,0 +1,4920 @@
+{
+    "language": "zh-tw",
+    "type": "basic",
+    "version": {
+        "atk": "v270",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "as_adj": [
+            "熱血",
+            "振奮人心"
+        ],
+        "as_noun": [
+            "KB",
+            "PA",
+            "bass",
+            "主唱",
+            "吉他",
+            "團室",
+            "爵士鼓",
+            "社員",
+            "社課",
+            "社費",
+            "結他",
+            "練團室",
+            "貝斯",
+            "鼓",
+            "星聲社",
+            "非社團成員",
+            "校外人士",
+            "社辦",
+            "社團",
+            "學長",
+            "想法",
+            "東西",
+            "樂團"
+        ],
+        "as_verb": [
+            "練團"
+        ]
+    },
+    "utterance": {
+        "星聲社在幹嘛": {
+            "id": "c758ce75-3896-45ea-82cd-9bdfd4365513",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhyQ",
+                    "text": "幹嘛",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社會強迫組團嗎": {
+            "id": "0b345380-7438-4e7f-8215-229e25f64bd8",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "勉強",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "壓迫",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "強制",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "強逼",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "脅迫",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "迫使",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "迫脅",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "逼迫",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "勒令",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "勒逼",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "壓服",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "威逼",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "硬逼",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "裹挾",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "進逼",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "逼著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要求",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "拒絕",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "迫",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "誘騙",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "自願",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "逼",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "強迫",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "合組",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "邀請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參訪",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "齊聚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "組隊",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "選送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "踩線",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "邀請了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "遊學",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參展",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "廣邀",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "組團",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社社團活動地點": {
+            "id": "34bafbef-e0e6-4eb7-9f15-98467d739998",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "社團",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "地點",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "星聲社會舉辦哪些活動": {
+            "id": "07bad2e3-3529-41a8-a9cf-41e4a8c99ace",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "舉行",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "召開",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "合辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "主辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "籌辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "舉辦",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "哪些",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "星聲社有沒有國際交流": {
+            "id": "ab5bbcaf-25ca-431f-b3ad-ecfa26b20803",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "有沒有",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "國際",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "互訪",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "互動",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "溝通",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "切磋",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "對談",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "合作",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "觀摩",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "經貿",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "研討",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "往來",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "交流",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社的活動頻率如何": {
+            "id": "2ce87168-1be3-44eb-b09a-6f77b74e246d",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "活動頻率",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社社團活動在幹嘛": {
+            "id": "953b2e18-a812-40c3-81fe-821515755d1a",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "社團",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhyQ",
+                    "text": "幹嘛",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社常有比賽或表演嗎": {
+            "id": "ec6ff3b9-26fe-42f8-806d-2efc262cf55c",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "常",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "比賽",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "或",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "上演",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "主演",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "扮演",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "演出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "演戲",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "演示",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "演繹",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "表現",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "表示",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "表露",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "飾演",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "作弄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "充當",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "吹奏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "展示",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "引領",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "彈奏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "戲弄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "指引",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "揭示",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "玩弄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "玩耍",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "耍弄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "裝扮",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "賣弄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "逗弄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "顯示",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "編舞",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "排練",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "彩排",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "展演",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "彈唱",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "公演",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "排演",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "演奏",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "演唱",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "表演",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社社團活動時間為何": {
+            "id": "d183d5ec-2771-43c8-8a51-609f1e936815",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "社團",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "時間",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_WhyQ",
+                    "text": "為何",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "想認識新朋友星聲社適合嗎": {
+            "id": "f77d2a03-9437-4b6c-a2ff-5dde5a66091b",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "假想",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "冥想",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "回想",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想像",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想念",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想拿",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想望",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想買",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想起",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "料想",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "暗想",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "猜想",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "預想",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "企盼",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "假設",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "希望",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "思念",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "思考",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "感到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷念",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "掂量",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "揣測",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "期冀",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "猜測",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祈望",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祈願",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祝願",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "自認",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "覺得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "需要",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "願",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想讓",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "願意",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "打算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "試著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "更想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "試",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "想",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "熟識",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "見識",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "認出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "認得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "識別",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "識得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "識見",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "識貨",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "辨認",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "辨認出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "辨識",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "了解",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "懂得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "掌握",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "明知",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "曉得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "深知",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "熟悉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "熟諳",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "瞭解",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "知悉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "確信",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "確知",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "聞見",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "見聞",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "記得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "結識",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接觸了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "認識了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相識",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接觸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結交",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "認識",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "新朋友",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "適合",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社會定期舉辦哪些活動": {
+            "id": "c06d370f-e0cf-420b-b8e2-1b5aff025d85",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "定期",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "舉行",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "召開",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "合辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "主辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "籌辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "舉辦",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "哪些",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "星聲社每年有哪些大型活動": {
+            "id": "885366ac-d7e9-4120-893d-a5a279fc62fe",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "TIME_year",
+                    "text": "每年",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "哪些",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "大型",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "星聲社社團活動沒到會怎樣": {
+            "id": "5d9bd422-fbea-4aaa-90ca-dbe2b8f9cadc",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "社團",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_negation",
+                    "text": "沒",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "到了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到約",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到受",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到離",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到包",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到經過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到回",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到隨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到死",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到經",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "到",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "會",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "怎樣",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社定期的社團聚會在幹嘛": {
+            "id": "2b75121e-8488-4637-955a-c4a62c91be15",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "定期",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "社團",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "聚會",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhyQ",
+                    "text": "幹嘛",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社平時活動很多人參加嗎": {
+            "id": "80c70e28-711c-4b9c-85bf-28fb897e3879",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "TIME_justtime",
+                    "text": "平時",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "DegreeP",
+                    "text": "很多",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "人",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "加入",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加盟",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "伴隨",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "侍奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "傾聽",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "吸引住",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "定期去",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "照看",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "照顧",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "監聽",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "看護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "細聽",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "經常去",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "聆聽",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "陪護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參賽",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "參加",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社有哪些活動是對外開放": {
+            "id": "f24a7b3a-a3ce-4022-ab4c-281b54f29fc5",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "哪些",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "對",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "RANGE_locality",
+                    "text": "外",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "開放了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "封閉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "放寬",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "提供",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開館",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "啟用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "試辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "重開",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發放",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "開放",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社有沒有定期的社團聚會": {
+            "id": "8e714f50-f4a5-441d-8137-8fcb83a5b203",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "有沒有",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "定期",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "社團",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "聚會",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "星聲社社團活動一定要出席嗎": {
+            "id": "35d95628-40da-4248-a559-069e9be1be5d",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "社團",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "一定",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "想要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "需要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想拿",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "想買",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "渴望",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "渴求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "真要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得照",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "更要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "餓了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "餓",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "要",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "列席",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "伴隨",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "侍奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "傾聽",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "呈獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "呈送",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "呈遞",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "定期去",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "敬奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "敬贈",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "照看",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "照顧",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "獻出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "監聽",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "看護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "細聽",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "經常去",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "聆聽",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遞交",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "陪護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "與會",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "缺席",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "拜會",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "主持",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "出席",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社社團活動很多人參加嗎": {
+            "id": "2cc13779-849a-4147-81a8-edf9f67e070c",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "社團",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "DegreeP",
+                    "text": "很多",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "人",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "加入",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加盟",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "伴隨",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "侍奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "傾聽",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "吸引住",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "定期去",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "照看",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "照顧",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "監聽",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "看護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "細聽",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "經常去",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "聆聽",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "陪護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參賽",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "參加",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "什麼時候有機會換我的樂團上台": {
+            "id": "af28879d-92fa-43eb-949b-252c2a209e86",
+            "argument": [
+                {
+                    "pos": "CLAUSE_WhenQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "時候",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "機會",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "更換",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "換了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "買",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "換到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉換",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "換回",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "換成",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有換",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "拆開",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "換購",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "換",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "我",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "樂團",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "領失",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出書了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "望續",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "逛攤",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "望復",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "募齊",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出書",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "上台",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社參與校外活動的機會多嗎": {
+            "id": "a9c5ccb4-2f1c-466e-a2bb-35439273310a",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "參加",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "與會",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "從事",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發起",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "參與",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "校",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "RANGE_locality",
+                    "text": "外",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "機會",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "多",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社提供的新生導覽或介紹會": {
+            "id": "991ee0bd-c623-4088-bd7d-08b04e2447ee",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "供應",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供給",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供貨",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供銷",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供電",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "提出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "提案",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "協助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "奉獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶給",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "武裝",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "獻出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "發放",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祭拜",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祭祀",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "補給",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "貢獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "資助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "進獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "提供了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給予",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出借",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收集",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶來",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "提供",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "新生",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "前導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "嚮導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "導入",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "導讀",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "引導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "教導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "執教",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶領",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "指引",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "教育",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "訓示",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "調教",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "參觀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "踏查",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "講解",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "解說",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "介紹",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "彩繪",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "導賞",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "走讀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "賞鳥",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "導覽",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "或",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "推介",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "傳告",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "傳送",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "傳達",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "分享",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "宣傳",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "導入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "引入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "引見",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "引進",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "指示",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "講述",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉達",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "述說",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "介紹了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "簡述",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "講解",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "解說",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "導覽",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "展示",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推薦",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "介紹",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社有跟哪些社團有長期合作": {
+            "id": "c647294b-fe62-4ccd-9b32-0e1af98c648d",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "跟",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "哪些",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "社團",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "長期",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "合辦",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "操作",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "配合",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "做活",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "協辦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "幹活",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "想出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "打拼",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "瞎忙",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "硬幹",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "合作過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "聯手",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "攜手",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "協作",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "聯繫",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結盟",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接洽",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "交流",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "合組",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "合作",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社社團活動通常在哪裡舉辦": {
+            "id": "67c5fca3-0991-43f6-bc4c-64af00a89d74",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "社團",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "TIME_justtime",
+                    "text": "通常",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhereQ",
+                    "text": "哪裡",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "舉行",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "籌辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "主辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "召開",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "合辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "舉辦",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社國際交流的活動有什麼門檻嗎": {
+            "id": "569343be-caa7-4888-a528-7ff73cd19e32",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "國際",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "互訪",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "互動",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "溝通",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "切磋",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "對談",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "合作",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "觀摩",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "經貿",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "研討",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "往來",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "交流",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "門檻",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社有參加過什麼校內活動或競賽": {
+            "id": "a79d88b1-8fc4-4e04-b3f4-f2bcc39067b8",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "VerbP",
+                    "lexy": [
+                        {
+                            "text": "加入",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加盟",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "伴隨",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "侍奉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "傾聽",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "吸引住",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "定期去",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "照看",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "照顧",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "監聽",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "看護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "細聽",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "經常去",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "聆聽",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "陪護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參加了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "主辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "參與",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出席",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "主辦",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "參加過",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "校",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "RANGE_locality",
+                    "text": "內",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "或",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "賽跑",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "賽車",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "競技",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "競賽",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社有哪些內部交流或學習的機會": {
+            "id": "6951c92a-3a6c-434a-8d0b-509857d60d4a",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "哪些",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "內部",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "互訪",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "互動",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "溝通",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "切磋",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "對談",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "合作",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "觀摩",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "經貿",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "研討",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "往來",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "交流",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "或",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "修習",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "傳習",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "求學",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "留學",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "習得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "見習",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "遊學",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "吸取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "吸收",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "攝取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "攻讀",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "研判",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "研讀",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "考查",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "融入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "深造",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "學習了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "鑽研",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進修",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "教學",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "讀書",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "自學",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "學習",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "機會",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "星聲社有沒有提供新生導覽或介紹會": {
+            "id": "d7b60363-dfd9-4fa0-bf84-2eae4d40ee2f",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "有沒有",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "供應",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供給",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供貨",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供銷",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供電",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "提出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "提案",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "協助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "奉獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶給",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "武裝",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "獻出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "發放",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祭拜",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祭祀",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "補給",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "貢獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "資助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "進獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "提供了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給予",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出借",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收集",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶來",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "提供",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "新生",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "前導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "嚮導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "導入",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "導讀",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "引導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "教導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "執教",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶領",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "指引",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "教育",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "訓示",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "調教",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "參觀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "踏查",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "講解",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "解說",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "介紹",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "彩繪",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "導賞",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "走讀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "賞鳥",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "導覽",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "或",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "推介",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "傳告",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "傳送",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "傳達",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "分享",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "宣傳",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "導入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "引入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "引見",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "引進",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "指示",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "講述",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉達",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "述說",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "介紹了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "簡述",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "講解",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "解說",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "導覽",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "展示",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推薦",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "介紹",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}
