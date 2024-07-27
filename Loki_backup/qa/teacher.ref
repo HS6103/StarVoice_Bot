@@ -1,0 +1,829 @@
+{
+    "language": "zh-tw",
+    "type": "basic",
+    "version": {
+        "atk": "v270",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "as_adj": [
+            "熱血",
+            "振奮人心"
+        ],
+        "as_noun": [
+            "KB",
+            "PA",
+            "bass",
+            "主唱",
+            "吉他",
+            "團室",
+            "爵士鼓",
+            "社員",
+            "社課",
+            "社費",
+            "結他",
+            "練團室",
+            "貝斯",
+            "鼓",
+            "星聲社",
+            "非社團成員",
+            "校外人士",
+            "社辦",
+            "社團",
+            "學長",
+            "想法",
+            "東西",
+            "樂團"
+        ],
+        "as_verb": [
+            "練團"
+        ]
+    },
+    "utterance": {
+        "是否有指導老師": {
+            "id": "d9ef1b10-8f5c-4d11-8ce7-df7a60518805",
+            "argument": [
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "是否",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "主導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "前導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "嚮導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "執導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "導入",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "導覽",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "導讀",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "引導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指引",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指授",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指揮",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指教",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指示",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指路",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指點",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "教導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "督導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "輔導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "領導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "下令",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "主持",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "主演",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "傳告",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "傳經",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "命令",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "執教",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "報告",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶領",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "引領",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "教育",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "率領",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "訓示",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "調度",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "調教",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開示",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "薰陶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "協助",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "解說",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "監督",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "鼓勵",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "指導",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "老師",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "星聲社的指導老師是誰": {
+            "id": "121b6587-c424-48e9-8231-b60968e4699f",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "主導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "前導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "嚮導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "執導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "導入",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "導覽",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "導讀",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "引導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指引",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指授",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指揮",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指教",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指示",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指路",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指點",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "教導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "督導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "輔導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "領導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "下令",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "主持",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "主演",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "傳告",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "傳經",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "命令",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "執教",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "報告",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶領",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "引領",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "教育",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "率領",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "訓示",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "調度",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "調教",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開示",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "薰陶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "協助",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "解說",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "監督",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "鼓勵",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "指導",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "老師",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhoQ",
+                    "text": "誰",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "星聲社的指導老師背景": {
+            "id": "6980495b-6f94-41e5-886a-9513cfeec11f",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "星聲社",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "主導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "前導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "嚮導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "執導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "導入",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "導覽",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "導讀",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "引導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指引",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指授",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指揮",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指教",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指示",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指路",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "指點",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "教導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "督導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "輔導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "領導",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "下令",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "主持",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "主演",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "傳告",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "傳經",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "命令",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "執教",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "報告",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶領",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "引領",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "教育",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "率領",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "訓示",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "調度",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "調教",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開示",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "薰陶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "協助",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "解說",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "監督",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "鼓勵",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "指導",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "老師背景",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}

@@ -1,0 +1,89 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v270",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "as_adj": [
+            "熱血",
+            "振奮人心"
+        ],
+        "as_noun": [
+            "KB",
+            "PA",
+            "bass",
+            "主唱",
+            "吉他",
+            "團室",
+            "爵士鼓",
+            "社員",
+            "社課",
+            "社費",
+            "結他",
+            "練團室",
+            "貝斯",
+            "鼓",
+            "星聲社",
+            "非社團成員",
+            "校外人士",
+            "社辦",
+            "社團",
+            "學長",
+            "想法",
+            "東西",
+            "樂團"
+        ],
+        "as_verb": [
+            "練團"
+        ]
+    },
+    "utterance": {
+        "有社課嗎": {
+            "id": "cdc47fcb-e6ab-4052-9f96-ba71973d214d",
+            "pos": "<ACTION_verb>有</ACTION_verb><UserDefined>社課</UserDefined><CLAUSE_YesNoQ>嗎</CLAUSE_YesNoQ>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>([^<]+)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>社?課</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<CLAUSE_YesNoQ>[^<]+</CLAUSE_YesNoQ>)?"
+        },
+        "有什麼社課": {
+            "id": "87482581-741b-4786-be44-1802c6701d10",
+            "pos": "<ACTION_verb>有</ACTION_verb><CLAUSE_WhatQ>什麼</CLAUSE_WhatQ><UserDefined>社課</UserDefined>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(有|具有|兼有|存有|帶有|懷有|持有|擁有|有了|有著|保留)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>有</(ACTION_verb|VerbP)><CLAUSE_WhatQ>[^<]+</CLAUSE_WhatQ><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>社?課</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "有沒有社課": {
+            "id": "0b81602c-8ecb-4496-aeb2-aeb1d875c77b",
+            "pos": "<CLAUSE_AnotAQ>有沒有</CLAUSE_AnotAQ><UserDefined>社課</UserDefined>",
+            "lexy": [],
+            "pattern": "<CLAUSE_AnotAQ>有沒有</CLAUSE_AnotAQ>(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>([^<]+)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>社課</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>"
+        },
+        "吉他社課是星期一": {
+            "id": "455650ff-6d54-4b07-9d0e-63dba654755b",
+            "pos": "<UserDefined>吉他</UserDefined><UserDefined>社課</UserDefined><AUX>是</AUX><TIME_week>星期一</TIME_week>",
+            "lexy": [],
+            "pattern": "<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>([^<]+)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>社課</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><AUX>[^<]+</AUX>(<TIME_(holiday|justtime|day|week|month|season|year|decade)>[^<]+</TIME_(holiday|justtime|day|week|month|season|year|decade)>){1,10}"
+        },
+        "吉他社課是什麼時候": {
+            "id": "e07ed981-07ed-4200-843a-f286a65b2db4",
+            "pos": "<ENTITY_noun>吉他</ENTITY_noun><UserDefined>社課</UserDefined><AUX>是</AUX><CLAUSE_WhenQ>什麼</CLAUSE_WhenQ><ENTITY_oov>時候</ENTITY_oov>",
+            "lexy": [],
+            "pattern": "(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>([^<]+)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>社?課</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))><AUX>[^<]+</AUX>(<CLAUSE_WhenQ>[^<]+</CLAUSE_WhenQ><(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(時候|時間)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>|<CLAUSE_HowQ>幾</CLAUSE_HowQ><QUANTIFIER>點</QUANTIFIER>|<TIME_(holiday|justtime|day|week|month|season|year|decade)>(星期|禮拜)</TIME_(holiday|justtime|day|week|month|season|year|decade)>{1,10}<CLAUSE_HowQ>幾</CLAUSE_HowQ>)"
+        },
+        "社課都辦在什麼時候": {
+            "id": "3714ebdf-1c1e-43fb-93cc-7acaee479015",
+            "pos": "<UserDefined>社課</UserDefined><QUANTIFIER>都</QUANTIFIER><ACTION_verb>辦</ACTION_verb><FUNC_inner>在</FUNC_inner><CLAUSE_WhenQ>什麼</CLAUSE_WhenQ><ENTITY_oov>時候</ENTITY_oov>",
+            "lexy": [
+                "(?<!</FUNC_negation>)<(ACTION_verb|VerbP)>(辦|籌辦|承辦|舉辦|主辦|辦了|辦過|辦副|辦說|辦理|合辦)</(ACTION_verb|VerbP)>"
+            ],
+            "pattern": "(<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>([^<]+)</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>)?<(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>社課</(UserDefined|ENTITY_(nounHead|nouny|noun|oov))>(<QUANTIFIER>[^<]+</QUANTIFIER>)?<(ACTION_verb|VerbP)>辦</(ACTION_verb|VerbP)>(<FUNC_in(ner|ter)>[^<]+</FUNC_in(ner|ter)>)?(<CLAUSE_WhenQ>[^<]+</CLAUSE_WhenQ>|<CLAUSE_HowQ>幾</CLAUSE_HowQ><QUANTIFIER>點</QUANTIFIER>)"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}
