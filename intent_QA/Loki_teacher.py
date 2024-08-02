@@ -53,26 +53,31 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
     debugInfo(inputSTR, utterance)
     if utterance == "[星聲社]的指導[老師]是誰":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '星聲社' and args[1] == '老師':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
-    if utterance == "[星聲社]的指導[老師背景]":
+    if utterance == "[星聲社]的指導[老師][背景]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] == '星聲社' and args[1] == '老師' and args[2] in ['背景', '資歷']:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
 
     if utterance == "[是]否有指導[老師]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] == '老師':
+                resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            # resultDICT[key].append(value)
             pass
+        
+    if utterance == "[你們]的指導[老師]是誰":
+        if CHATBOT_MODE:
+            if args[0] in ['你們', '我們', ''] and args[1] == '老師':
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+
 
     return resultDICT
