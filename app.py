@@ -4,6 +4,7 @@
 from flask import Flask, request
 from sys import path
 import os
+from datetime import datetime
 import logging
 
 from reserve_bot import execLoki as reserve_loki
@@ -18,11 +19,9 @@ from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
 app = Flask(__name__)
-
 @app.route("/", methods=['POST'])
 
 def linebot():
-    
     body = request.get_data(as_text=True)                # 取得收到的訊息內容
     try:
         json_data = json.loads(body)                         # json 格式化訊息內容
@@ -35,11 +34,14 @@ def linebot():
         tk = json_data['events'][0]['replyToken']            # 取得回傳訊息的 Token
         type = json_data['events'][0]['message']['type']     # 取得 LINE 收到的訊息類型
         
-        ############### message handling ###############
+        # ############## message handling ############### 
         if type=='text':
             msg = json_data['events'][0]['message']['text']  # 取得 LINE 收到的文字訊息
             print(msg)                                       # 印出內容
             
+            if msg.lower() in ["哈囉","嗨","你好","您好","hi","hello"]:
+                reply = msg + "\n" + "我是陽明交大星聲社機器人\你可以用我來問問題或預約團室\n請問您今天想問什麼呢?"
+                
             filterLIST = []
             splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
             refDICT = {}
@@ -82,7 +84,8 @@ def linebot():
     except Exception as e:
         print("[ERROR] => {}".format(str(e)))
         print(body)                                                                   # 如果發生錯誤，印出收到的內容
-                                                                 
+    
+    await(reply)                                                             
     return 'OK'                                                                       # 驗證 Webhook 使用，不能省略   
 
 if __name__ == "__main__":

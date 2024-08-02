@@ -56,5 +56,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             resultDICT["intent"] = 'reservation'
+            resultDICT["location"] = args[3]
             
     return resultDICT

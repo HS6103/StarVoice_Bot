@@ -55,6 +55,18 @@ import re
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 
+# 載入 username 和 loki_key
+# 若找不到 account.info 則設為 None
+try:
+    with open("account.info", encoding="utf-8") as f:
+        accountDICT = json.load(f)
+        username = accountDICT['username']
+        loki_key = accountDICT['loki_key_qa']
+        
+except Exception:
+    username = None
+    loki_key = None
+
 lokiIntentDICT = {}
 for modulePath in glob("{}\\intent_QA\\Loki_*.py".format(BASE_PATH)):
     moduleNameSTR = Path(modulePath).stem[5:]
@@ -104,7 +116,7 @@ class LokiResult():
                 result = post(LOKI_URL, json={
                     "username": os.environ.get('loki_username'),
                     "input_list": inputLIST,
-                    "loki_key": os.environ.get('loki_key'),
+                    "loki_key": os.environ.get('loki_key_qa'),
                     "filter_list": filterLIST
                 })
             else:

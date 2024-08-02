@@ -55,6 +55,18 @@ import re
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 
+# 載入 username 和 loki_key
+# 若找不到 account.info 則設為 None
+try:
+    with open("account.info", encoding="utf-8") as f:
+        accountDICT = json.load(f)
+        username = accountDICT['username']
+        loki_key = accountDICT['loki_key_reserve']
+        
+except Exception:
+    username = None
+    loki_key = None
+
 
 lokiIntentDICT = {}
 for modulePath in glob("{}\\intent_reserve\\Loki_*.py".format(BASE_PATH)):
@@ -89,12 +101,20 @@ class LokiResult():
             filterLIST = INTENT_FILTER
 
         try:
-            result = post(LOKI_URL, json={
-                "username": os.environ.get("loki_username"),
-                "input_list": inputLIST,
-                "loki_key": os.environ.get("loki_key_reserve"),
-                "filter_list": filterLIST
-            })
+            if username == None and loki_key == None:                 # 若 username 和 loki_key 為 None 則從 .env 載入  
+                result = post(LOKI_URL, json={
+                    "username": os.environ.get('loki_username'),
+                    "input_list": inputLIST,
+                    "loki_key": os.environ.get('loki_key_reserve'),
+                    "filter_list": filterLIST
+                })
+            else:
+                result = post(LOKI_URL, json={
+                    "username": username, 
+                    "input_list": inputLIST,
+                    "loki_key": loki_key,
+                    "filter_list": filterLIST
+                })
 
             if result.status_code == codes.ok:
                 result = result.json()
@@ -285,7 +305,7 @@ if __name__ == "__main__":
     refDICT = { # value 必須為 list
         #"key": []
     }
-    resultDICT = execLoki("團室", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
+    resultDICT = execLoki("7點之後", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
     print(resultDICT)
     #resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, splitLIST=splitLIST, refDICT=refDICT) # output => {"key": ["今天天氣", "後天氣象"]}
     #resultDICT = execLoki(["今天天氣如何？", "後天氣象如何？"], filterLIST=filterLIST, refDICT=refDICT)                # output => {"key": ["今天天氣", "後天氣象"]}
